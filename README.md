@@ -53,12 +53,14 @@ To uninstall:
 Basic:
 
   $ simplei
+  
   Local IP:    192.168.1.42
   External IP: 203.0.113.15
 
 With geo info:
 
   $ simplei --geo
+  
   Local IP:    192.168.1.42
   External IP: 203.0.113.15
   Provider:    AS12345 Example ISP
