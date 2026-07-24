@@ -3,7 +3,7 @@
 
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -O2
-TARGET = simpleI
+TARGET = simplei
 SRC = simpleI.cpp
 PREFIX = /usr/local
 
