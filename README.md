@@ -14,59 +14,67 @@ No dependencies, no curl, one command.
 
 ## Getting Started
 
-### Option 1: Build from Source
+Choose the method that fits your system.
 
-Requirements:
-  - g++ (GCC) with C++17 support
-  - make
+### Option 1: Install a Pre-built Package
 
-Clone and build:
+The easiest way. Download the package for your distribution from the Releases page and install it.
 
-  git clone https://github.com/vladik50/simpleI.git
-  cd simpleI
-  make
+**Debian / Ubuntu / Linux Mint:**
+sudo dpkg -i simplei_1.0-1_amd64.deb
 
-Run without installing:
+**Fedora / RHEL:**
+sudo dnf install simplei-1.0-1.fcXX.x86_64.rpm
 
-  ./simplei
-  ./simplei --geo
+**Arch Linux / Manjaro:**
+sudo pacman -U simplei-1.0-1-x86_64.pkg.tar.zst
 
-Install system-wide (optional):
+After installation, run:
+simplei
 
-  sudo make install
+### Option 2: Build from Source
 
-This copies simplei to /usr/local/bin. You can then run it from anywhere:
+**Requirements**
+- g++ (GCC) with C++17 support
+- make
 
-  simplei
+**Clone and build**
+git clone https://github.com/vladik50/simpleI.git
+cd simpleI
+make
+
+**Run without installing**
+./simplei
+./simplei --geo
+
+**Install system-wide (optional)**
+sudo make install
 
 To uninstall:
+sudo make uninstall
 
-  sudo make uninstall
-
-### Option 2: Compile Manually
-
-  g++ -std=c++17 -O2 -o simplei simplei.cpp
-  ./simplei
+**Compile manually**
+g++ -std=c++17 -O2 -o simplei simplei.cpp
+./simplei
 
 ## Usage
 
-Basic:
+Launch the tool:
+simplei
 
-  $ simplei
-  
-  Local IP:    192.168.1.42
-  External IP: 203.0.113.15
+**Basic:**
+$ simplei
+Local IP:    192.168.1.42
+External IP: 203.0.113.15
 
-With geo info:
-
-  $ simplei --geo
-  
-  Local IP:    192.168.1.42
-  External IP: 203.0.113.15
-  Provider:    AS12345 Example ISP
-  Country:     RU
-  Region:      Moscow
-  City:        Moscow
+**With geo info:**
+$ simplei --geo
+Local IP:    192.168.1.42
+External IP: 203.0.113.15
+Provider:    AS12345 Example ISP
+Country:     RU
+Region:      Moscow
+City:        Moscow
 
 ## License
 
