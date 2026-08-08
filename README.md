@@ -18,7 +18,7 @@ Choose the method that fits your system.
 
 ### Option 1: Install a Pre-built Package
 
-The easiest way. Download the package for your distribution from the Releases page and install it.
+The easiest way. Download the package for your distribution from the [Releases](https://github.com/vladik50/simpleI/releases) page and install it.
 
 **Debian / Ubuntu / Linux Mint:**
 sudo dpkg -i simplei_1.0-1_amd64.deb
